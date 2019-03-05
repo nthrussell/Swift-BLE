@@ -14,6 +14,7 @@
 		FDFEBF56222E174800FD2687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDFEBF54222E174800FD2687 /* LaunchScreen.storyboard */; };
 		FDFEBF61222E174800FD2687 /* SwitchBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFEBF60222E174800FD2687 /* SwitchBotTests.swift */; };
 		FDFEBF6C222E174800FD2687 /* SwitchBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFEBF6B222E174800FD2687 /* SwitchBotUITests.swift */; };
+		FDFEBF7B222E17E300FD2687 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFEBF7A222E17E300FD2687 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FDFEBF67222E174800FD2687 /* SwitchBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwitchBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFEBF6B222E174800FD2687 /* SwitchBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchBotUITests.swift; sourceTree = "<group>"; };
 		FDFEBF6D222E174800FD2687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDFEBF7A222E17E300FD2687 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDFEBF7B222E17E300FD2687 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				FDFEBF5F222E174800FD2687 /* SwitchBotTests */,
 				FDFEBF6A222E174800FD2687 /* SwitchBotUITests */,
 				FDFEBF49222E174600FD2687 /* Products */,
+				FDFEBF79222E17E200FD2687 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				FDFEBF6D222E174800FD2687 /* Info.plist */,
 			);
 			path = SwitchBotUITests;
+			sourceTree = "<group>";
+		};
+		FDFEBF79222E17E200FD2687 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDFEBF7A222E17E300FD2687 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A9JA8PNZH;
 				INFOPLIST_FILE = SwitchBot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A9JA8PNZH;
 				INFOPLIST_FILE = SwitchBot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
