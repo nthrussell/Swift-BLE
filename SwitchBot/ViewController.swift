@@ -35,6 +35,12 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        
+        guard let peripherialName = peripheral.name else {
+            return
+        }
+        print("Descovered peripheral name: \(peripherialName)")
+        
         if peripheral.name?.contains("WoHand") == true {
             print(peripheral.name ?? "no name")
             self.peripherialLabel.text = peripheral.name
