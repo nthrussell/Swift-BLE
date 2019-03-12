@@ -113,6 +113,12 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
             print("characteristic.value is: \(characteristic.value!)")
         }
     }
-
+    
+    
+    @IBAction func moveArm(_ sender: Any) {
+        print("Move Arm tapped")
+        centralManager = CBCentralManager.init(delegate: self, queue: nil)
+    }
+    
 }
 
